@@ -6,14 +6,12 @@ const { readdirSync } = require('fs');
 require('dotenv').config();
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT;
 
-// middleware
 app.use(express.json());
 app.use(cors());
 app.use(morgan('dev'));
 
-// routes
 readdirSync('./routes').map((i) => {
   try {
     console.log(`Loading route: ${i}`);
@@ -23,7 +21,6 @@ readdirSync('./routes').map((i) => {
   }
 });
 
-// server
 app.listen(PORT, () => {
-  console.log(`Calculator API running at http://localhost:${PORT}`);
+  console.log(`Server is running on ${PORT}`);
 });
