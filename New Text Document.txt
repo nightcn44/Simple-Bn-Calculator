@@ -1,5 +1,5 @@
 npm init -y
 
-npm install express nodemon morgan cors mysql2 mongoose jsonwebtoken bcryptjs dotenv prisma @prisma/client
+npm install express morgan cors dotenv
 
 Node.js Express.js

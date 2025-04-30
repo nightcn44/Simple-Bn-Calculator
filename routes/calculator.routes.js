@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { add, subtract, multiply, divide } = require('../controllers/calculatorController');
+const { add, subtract, multiply, divide } = require('../controllers/calculator.Controller');
 
 router.get('/add', add);
 router.get('/subtract', subtract);
