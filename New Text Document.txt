@@ -1,5 +1,0 @@
-npm init -y
-
-npm install express morgan cors dotenv
-
-Node.js Express.js
